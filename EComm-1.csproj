@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BF25123-5F09-4C29-B74E-5A936E44181F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EComm_1</RootNamespace>
+    <AssemblyName>EComm-1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BootstrapDesign\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="BootstrapDesign\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="BootstrapDesign\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="BootstrapDesign\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="BootstrapDesign\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="BootstrapDesign\fontawesome\less\animated.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\bordered-pulled.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\core.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\fixed-width.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\font-awesome.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\icons.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\larger.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\list.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\mixins.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\path.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\rotated-flipped.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\screen-reader.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\stacked.less" />
+    <Content Include="BootstrapDesign\fontawesome\less\variables.less" />
+    <Content Include="BootstrapDesign\fontawesome\scss\font-awesome.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_animated.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_core.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_fixed-width.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_icons.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_larger.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_list.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_mixins.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_path.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_screen-reader.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_stacked.scss" />
+    <Content Include="BootstrapDesign\fontawesome\scss\_variables.scss" />
+    <Content Include="BootstrapTempMor\About.aspx" />
+    <Content Include="BootstrapTempMor\css\bootstrap-responsive.min.css" />
+    <Content Include="BootstrapTempMor\css\bootstrap.min.css" />
+    <Content Include="BootstrapTempMor\css\docs.css" />
+    <Content Include="BootstrapTempMor\css\font-awesome.min.css" />
+    <Content Include="BootstrapTempMor\css\main.css" />
+    <Content Include="BootstrapTempMor\css\mixins.css" />
+    <Content Include="BootstrapTempMor\css\prettify.css" />
+    <Content Include="BootstrapTempMor\css\sl-slide.css" />
+    <Content Include="BootstrapTempMor\css\variables.css" />
+    <Content Include="BootstrapTempMor\font\fontawesome-webfont.svg" />
+    <Content Include="BootstrapTempMor\Home.aspx" />
+    <Content Include="BootstrapTempMor\images\ads\ad1.png" />
+    <Content Include="BootstrapTempMor\images\ads\ad2.png" />
+    <Content Include="BootstrapTempMor\images\ads\ad3.png" />
+    <Content Include="BootstrapTempMor\images\ads\ad4.png" />
+    <Content Include="BootstrapTempMor\images\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="BootstrapTempMor\images\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="BootstrapTempMor\images\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="BootstrapTempMor\images\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="BootstrapTempMor\images\ico\favicon.ico" />
+    <Content Include="BootstrapTempMor\images\logo.png" />
+    <Content Include="BootstrapTempMor\images\portfolio\full\item1.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\full\item2.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\full\item3.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\full\item4.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\full\item5.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\full\item6.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\thumb\item1.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\thumb\item2.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\thumb\item3.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\thumb\item4.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\thumb\item5.jpg" />
+    <Content Include="BootstrapTempMor\images\portfolio\thumb\item6.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\avatar.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\avatar.png" />
+    <Content Include="BootstrapTempMor\images\sample\blog1.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\cAvatar.png" />
+    <Content Include="BootstrapTempMor\images\sample\cAvatar1.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\cAvatar2.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\cAvatar3.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\clients\client1.png" />
+    <Content Include="BootstrapTempMor\images\sample\clients\client2.png" />
+    <Content Include="BootstrapTempMor\images\sample\clients\client3.png" />
+    <Content Include="BootstrapTempMor\images\sample\clients\client4.png" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img1.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img2.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img3.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img4.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img5.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img6.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img7.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\img8.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\img-team-thumb1.png" />
+    <Content Include="BootstrapTempMor\images\sample\img-team-thumb2.png" />
+    <Content Include="BootstrapTempMor\images\sample\img-team-thumb3.png" />
+    <Content Include="BootstrapTempMor\images\sample\img-team-thumb4.png" />
+    <Content Include="BootstrapTempMor\images\sample\img-testimonial-1.png" />
+    <Content Include="BootstrapTempMor\images\sample\img-testimonial-2.png" />
+    <Content Include="BootstrapTempMor\images\sample\img1.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\img2.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\index.html" />
+    <Content Include="BootstrapTempMor\images\sample\map.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\slider\img1.png" />
+    <Content Include="BootstrapTempMor\images\sample\slider\img2.png" />
+    <Content Include="BootstrapTempMor\images\sample\slider\img3.png" />
+    <Content Include="BootstrapTempMor\images\sample\team1.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\team2.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\team3.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\team4.jpg" />
+    <Content Include="BootstrapTempMor\images\sample\test.jpg" />
+    <Content Include="BootstrapTempMor\js\bootstrap.min.js" />
+    <Content Include="BootstrapTempMor\js\jquery.ba-cond.min.js" />
+    <Content Include="BootstrapTempMor\js\jquery.slitslider.js" />
+    <Content Include="BootstrapTempMor\js\main.js" />
+    <Content Include="BootstrapTempMor\js\twitter-bootstrap-hover-dropdown.min.js" />
+    <Content Include="BootstrapTempMor\js\vendor\bootstrap.min.js" />
+    <Content Include="BootstrapTempMor\js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="BootstrapTempMor\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="BootstrapTemp\About.aspx" />
+    <Content Include="BootstrapTemp\css\.DS_Store" />
+    <Content Include="BootstrapTemp\css\main.less" />
+    <Content Include="BootstrapTemp\css\mixins.less" />
+    <Content Include="BootstrapTemp\css\variables.less" />
+    <Content Include="BootstrapTemp\font\fontawesome-webfont.eot" />
+    <Content Include="BootstrapTemp\font\fontawesome-webfont.ttf" />
+    <Content Include="BootstrapTemp\font\fontawesome-webfont.woff" />
+    <Content Include="BootstrapTemp\font\FontAwesome.otf" />
+    <Content Include="BootstrapTemp\Home.aspx" />
+    <Content Include="BootstrapTemp\images\.DS_Store" />
+    <Content Include="BootstrapTemp\images\sample\.DS_Store" />
+    <Content Include="BootstrapTemp\images\sample\clients\.DS_Store" />
+    <Content Include="BootstrapTemp\images\sample\clients\Thumbs.db" />
+    <Content Include="BootstrapTemp\images\sample\gallery\Thumbs.db" />
+    <Content Include="BootstrapTemp\js\.DS_Store" />
+    <Content Include="BootstrapTemp\Site1.Master" />
+    <Content Include="BootstrapTempMor\css\.DS_Store" />
+    <Content Include="BootstrapTempMor\css\main.less" />
+    <Content Include="BootstrapTempMor\css\mixins.less" />
+    <Content Include="BootstrapTempMor\css\variables.less" />
+    <Content Include="BootstrapTempMor\font\fontawesome-webfont.eot" />
+    <Content Include="BootstrapTempMor\font\fontawesome-webfont.ttf" />
+    <Content Include="BootstrapTempMor\font\fontawesome-webfont.woff" />
+    <Content Include="BootstrapTempMor\font\FontAwesome.otf" />
+    <Content Include="BootstrapTempMor\images\.DS_Store" />
+    <Content Include="BootstrapTempMor\images\sample\.DS_Store" />
+    <Content Include="BootstrapTempMor\images\sample\clients\.DS_Store" />
+    <Content Include="BootstrapTempMor\images\sample\clients\Thumbs.db" />
+    <Content Include="BootstrapTempMor\images\sample\gallery\Thumbs.db" />
+    <Content Include="BootstrapTempMor\js\.DS_Store" />
+    <Content Include="BootstrapTempMor\Site1.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BootstrapDesign\bootstrap.css" />
+    <Content Include="BootstrapDesign\bootstrapAmelia.css" />
+    <Content Include="BootstrapDesign\bootstrapAmelia.min.css" />
+    <Content Include="BootstrapDesign\bootstrapLumen.css" />
+    <Content Include="BootstrapDesign\Contact-us.aspx" />
+    <Content Include="BootstrapDesign\Default.aspx" />
+    <Content Include="BootstrapDesign\fontawesome\css\font-awesome.css" />
+    <Content Include="BootstrapDesign\fontawesome\css\font-awesome.min.css" />
+    <Content Include="BootstrapDesign\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="BootstrapDesign\fontawesome\HELP-US-OUT.txt" />
+    <Content Include="BootstrapDesign\fontawesome\index.html" />
+    <Content Include="BootstrapDesign\Gallery.aspx" />
+    <Content Include="BootstrapDesign\Images\322614.jpg" />
+    <Content Include="BootstrapDesign\Images\Artistic.jpg" />
+    <Content Include="BootstrapDesign\Images\Fantsy.jpg" />
+    <Content Include="BootstrapDesign\Images\inspirational.jpg" />
+    <Content Include="BootstrapDesign\Images\MS.jpg" />
+    <Content Include="BootstrapDesign\makkah.jpg" />
+    <Content Include="BootstrapDesign\Typography.aspx" />
+    <Content Include="BootstrapMor\bootstrap.css" />
+    <Content Include="BootstrapMor\bootstrapAmelia.css" />
+    <Content Include="BootstrapMor\bootstrapAmelia.min.css" />
+    <Content Include="BootstrapMor\Default.aspx" />
+    <Content Include="BootstrapMor\makkah.jpg" />
+    <Content Include="BootstrapMor\Typography.aspx" />
+    <Content Include="BootstrapTemp\css\bootstrap-responsive.min.css" />
+    <Content Include="BootstrapTemp\css\bootstrap.min.css" />
+    <Content Include="BootstrapTemp\css\docs.css" />
+    <Content Include="BootstrapTemp\css\font-awesome.min.css" />
+    <Content Include="BootstrapTemp\css\main.css" />
+    <Content Include="BootstrapTemp\css\mixins.css" />
+    <Content Include="BootstrapTemp\css\prettify.css" />
+    <Content Include="BootstrapTemp\css\sl-slide.css" />
+    <Content Include="BootstrapTemp\css\variables.css" />
+    <Content Include="BootstrapTemp\font\fontawesome-webfont.svg" />
+    <Content Include="BootstrapTemp\images\ads\ad1.png" />
+    <Content Include="BootstrapTemp\images\ads\ad2.png" />
+    <Content Include="BootstrapTemp\images\ads\ad3.png" />
+    <Content Include="BootstrapTemp\images\ads\ad4.png" />
+    <Content Include="BootstrapTemp\images\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="BootstrapTemp\images\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="BootstrapTemp\images\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="BootstrapTemp\images\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="BootstrapTemp\images\ico\favicon.ico" />
+    <Content Include="BootstrapTemp\images\logo.png" />
+    <Content Include="BootstrapTemp\images\portfolio\full\item1.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\full\item2.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\full\item3.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\full\item4.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\full\item5.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\full\item6.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\thumb\item1.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\thumb\item2.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\thumb\item3.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\thumb\item4.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\thumb\item5.jpg" />
+    <Content Include="BootstrapTemp\images\portfolio\thumb\item6.jpg" />
+    <Content Include="BootstrapTemp\images\sample\avatar.jpg" />
+    <Content Include="BootstrapTemp\images\sample\avatar.png" />
+    <Content Include="BootstrapTemp\images\sample\blog1.jpg" />
+    <Content Include="BootstrapTemp\images\sample\cAvatar.png" />
+    <Content Include="BootstrapTemp\images\sample\cAvatar1.jpg" />
+    <Content Include="BootstrapTemp\images\sample\cAvatar2.jpg" />
+    <Content Include="BootstrapTemp\images\sample\cAvatar3.jpg" />
+    <Content Include="BootstrapTemp\images\sample\clients\client1.png" />
+    <Content Include="BootstrapTemp\images\sample\clients\client2.png" />
+    <Content Include="BootstrapTemp\images\sample\clients\client3.png" />
+    <Content Include="BootstrapTemp\images\sample\clients\client4.png" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img1.jpg" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img2.jpg" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img3.jpg" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img4.jpg" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img5.jpg" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img6.jpg" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img7.jpg" />
+    <Content Include="BootstrapTemp\images\sample\gallery\img8.jpg" />
+    <Content Include="BootstrapTemp\images\sample\img-team-thumb1.png" />
+    <Content Include="BootstrapTemp\images\sample\img-team-thumb2.png" />
+    <Content Include="BootstrapTemp\images\sample\img-team-thumb3.png" />
+    <Content Include="BootstrapTemp\images\sample\img-team-thumb4.png" />
+    <Content Include="BootstrapTemp\images\sample\img-testimonial-1.png" />
+    <Content Include="BootstrapTemp\images\sample\img-testimonial-2.png" />
+    <Content Include="BootstrapTemp\images\sample\img1.jpg" />
+    <Content Include="BootstrapTemp\images\sample\img2.jpg" />
+    <Content Include="BootstrapTemp\images\sample\index.html" />
+    <Content Include="BootstrapTemp\images\sample\map.jpg" />
+    <Content Include="BootstrapTemp\images\sample\slider\img1.png" />
+    <Content Include="BootstrapTemp\images\sample\slider\img2.png" />
+    <Content Include="BootstrapTemp\images\sample\slider\img3.png" />
+    <Content Include="BootstrapTemp\images\sample\team1.jpg" />
+    <Content Include="BootstrapTemp\images\sample\team2.jpg" />
+    <Content Include="BootstrapTemp\images\sample\team3.jpg" />
+    <Content Include="BootstrapTemp\images\sample\team4.jpg" />
+    <Content Include="BootstrapTemp\images\sample\test.jpg" />
+    <Content Include="BootstrapTemp\js\bootstrap.min.js" />
+    <Content Include="BootstrapTemp\js\jquery.ba-cond.min.js" />
+    <Content Include="BootstrapTemp\js\jquery.slitslider.js" />
+    <Content Include="BootstrapTemp\js\main.js" />
+    <Content Include="BootstrapTemp\js\twitter-bootstrap-hover-dropdown.min.js" />
+    <Content Include="BootstrapTemp\js\vendor\bootstrap.min.js" />
+    <Content Include="BootstrapTemp\js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="BootstrapTemp\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="exTernalCSS.aspx" />
+    <Content Include="ExternalCSSPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="HTMLTable.aspx" />
+    <Content Include="InternalCSS.aspx" />
+    <Content Include="intrnalCSS.aspx" />
+    <Content Include="makkah.jpg" />
+    <Content Include="Site.css" />
+    <Content Include="softslider3.jpg" />
+    <Content Include="Spacing.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="Typography.aspx" />
+    <Content Include="ValidationControls\ValidationForm.aspx" />
+    <Content Include="Validation\bootstrap.css" />
+    <Content Include="Validation\BuiltInValidationControls.aspx" />
+    <Content Include="Validation\JS.aspx" />
+    <Content Include="Validation\JSSignup.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BootstrapDesign\Contact-us.aspx.cs">
+      <DependentUpon>Contact-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapDesign\Contact-us.aspx.designer.cs">
+      <DependentUpon>Contact-us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapDesign\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapDesign\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapDesign\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapDesign\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapDesign\Typography.aspx.cs">
+      <DependentUpon>Typography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapDesign\Typography.aspx.designer.cs">
+      <DependentUpon>Typography.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapMor\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapMor\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapMor\Typography.aspx.cs">
+      <DependentUpon>Typography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapMor\Typography.aspx.designer.cs">
+      <DependentUpon>Typography.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapTempMor\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapTempMor\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapTempMor\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapTempMor\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapTempMor\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapTempMor\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapTemp\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapTemp\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapTemp\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapTemp\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapTemp\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapTemp\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exTernalCSS.aspx.cs">
+      <DependentUpon>exTernalCSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exTernalCSS.aspx.designer.cs">
+      <DependentUpon>exTernalCSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalCSSPage.aspx.cs">
+      <DependentUpon>ExternalCSSPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExternalCSSPage.aspx.designer.cs">
+      <DependentUpon>ExternalCSSPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTMLTable.aspx.cs">
+      <DependentUpon>HTMLTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTMLTable.aspx.designer.cs">
+      <DependentUpon>HTMLTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternalCSS.aspx.cs">
+      <DependentUpon>InternalCSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternalCSS.aspx.designer.cs">
+      <DependentUpon>InternalCSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="intrnalCSS.aspx.cs">
+      <DependentUpon>intrnalCSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="intrnalCSS.aspx.designer.cs">
+      <DependentUpon>intrnalCSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spacing.aspx.cs">
+      <DependentUpon>Spacing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spacing.aspx.designer.cs">
+      <DependentUpon>Spacing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Typography.aspx.cs">
+      <DependentUpon>Typography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Typography.aspx.designer.cs">
+      <DependentUpon>Typography.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationControls\ValidationForm.aspx.cs">
+      <DependentUpon>ValidationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidationControls\ValidationForm.aspx.designer.cs">
+      <DependentUpon>ValidationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\BuiltInValidationControls.aspx.cs">
+      <DependentUpon>BuiltInValidationControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validation\BuiltInValidationControls.aspx.designer.cs">
+      <DependentUpon>BuiltInValidationControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\JS.aspx.cs">
+      <DependentUpon>JS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validation\JS.aspx.designer.cs">
+      <DependentUpon>JS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\JSSignup.aspx.cs">
+      <DependentUpon>JSSignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validation\JSSignup.aspx.designer.cs">
+      <DependentUpon>JSSignup.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50288</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50288/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

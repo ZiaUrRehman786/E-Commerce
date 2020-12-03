@@ -1,0 +1,131 @@
+﻿body {
+}
+.menu {
+    height: 36px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-top: 5px;
+    vertical-align: middle;
+    text-align: center;
+    background: #00bfff;
+}
+#nav {
+    height: 50px;
+    width: 100%;
+    background: cadetblue;
+}
+
+.header {
+    height: 325px;
+    width: 100%;
+    background: url(softslider3.jpg);
+    float: left;
+}
+
+.left-sidebar {
+    height: 800px;
+    float: left;
+    width: 15%;
+    background: orange;
+}
+
+.center-content {
+    height: 800px;
+    width: 70%;
+    float: left;
+    background: chocolate;
+}
+
+.copy-right {
+    height: 30px;
+    width: 100%;
+    background: darkkhaki;
+    float: left;
+}
+[type=text],[type=password],button {
+    height: 36px;
+    width: 287px;
+    border: 1px solid #00bfff;
+}
+/*button {
+    height: 50px;
+    width: 287px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid #00bfff;
+}*/
+.btn-primary {
+    background: #4169e1;
+}
+.btn-info {
+    background: #00bfff;
+}
+.btn-warning {
+    background: orange;
+}
+.btn-success {
+    background: #008000;
+}
+.btn-danger {
+    background: red;
+}
+.myDiv {
+    height: 100px;
+    width: 19%;
+    margin-left: 0.5%;
+    float: left;
+    background: #00bfff;
+}
+.div-style1 {
+    border-radius: 20px;
+}
+.div-style2 {
+    border-radius: 20px 0px 20px 0px;
+}
+.div-style3 {
+    border-radius: 0px 20px 0px 20px;
+}
+.div-style4 {
+    border-radius: 0px 20px 20px 20px;
+}
+.div-style5 {
+    border-radius: 50%;
+    width: 15%;
+}
+.div-style1:hover {
+    border-radius: 20px;
+    background: blueviolet;
+}
+
+.div-style2:hover {
+    border-radius: 20px 0px 20px 0px;
+    background: deeppink;
+}
+
+.div-style3:hover {
+    border-radius: 0px 20px 0px 20px;
+    background: #4169e1;
+}
+
+.div-style4:hover {
+    border-radius: 0 0 0 0;
+}
+
+.div-style5:hover {
+    border-radius: 50%;
+    width: 15%;
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+
+

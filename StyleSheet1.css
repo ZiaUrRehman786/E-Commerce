@@ -1,0 +1,95 @@
+﻿body {
+    font-family: sans-serif;
+}
+#nav {
+    height: 50px;
+    width: 100%;
+    background: cadetblue;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background: darkgray;
+    float: left;
+}
+
+.left-sidebar {
+    height: 1400px;
+    width: 15%;
+    background: orange;
+    float: left;
+}
+
+.center-content {
+    height: 1400px;
+    width: 70%;
+    background: burlywood;
+    float: left;
+}
+
+.copy-rights {
+    height: 30px;
+    width: 100%;
+    background: goldenrod;
+    float: left;
+}
+h1 {
+    font-family: cursive;
+}
+table {
+    width: 100%;
+}
+[type=text],[type=password]{
+    height: 27px;
+    width: 287px;
+}
+.btn {
+    height: 36px;
+    width: 120px;
+    font-weight: bold;
+    border-bottom: 2px solid #008b8b;
+}
+.btn-primary {
+    background: #008b8b;
+}
+.btn-info {
+    background: #663399;
+}
+.btn-warning {
+    background: orange;
+    border-radius: 15%;
+}
+.btn-danger {
+    background: red;
+}
+.btn-success {
+    background: #008000;
+}
+.myDiv {
+    height: 100px;
+    width: 19%;
+    margin-left: 0.5%;
+    margin-bottom: 10px;
+    background: #008b8b;
+}
+.div-style1 {
+    border-radius: 20px;
+}
+.div-style2 {
+    border-radius: 20px 0px 20px 0px;
+}
+.div-style3 {
+    border-radius: 0px 20px 0px 20px;
+}
+.div-style4 {
+    border-radius: 20px 20px 0px 0px;
+}
+.div-style5 {
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+
+
+
